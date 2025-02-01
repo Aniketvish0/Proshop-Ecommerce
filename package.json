@@ -1,7 +1,7 @@
 {
-  "name": "proshop-v2",
+  "name": "proshop-v2-ecommerce",
   "version": "1.0.0",
-  "description": "E-Commerce Application built with MERN Stack ",
+  "description": "E-Commerce Application built with MERN Stack",
   "type": "module",
   "main": "server.js",
   "scripts": {
@@ -15,14 +15,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/s54a/proshop-v2.git"
+    "url": "git+https://github.com/Aniketvish0/Proshop-Ecommerce.git"
   },
-  "author": "Sooraj Gupta",
+  "author": "Aniket Vishwakarma",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/s54a/proshop-v2/issues"
+    "url": "https://github.com/Aniketvish0/Proshop-Ecommerce.git/issues"
   },
-  "homepage": "https://github.com/s54a/proshop-v2#readme",
+  "homepage": "https://github.com/Aniketvish0/Proshop-Ecommerce.git#readme",
   "dependencies": {
     "bcryptjs": "^2.4.3",
     "colors": "^1.4.0",
