@@ -1,0 +1,168 @@
+main {
+  min-height: 80vh;
+}
+
+.rating span {
+  margin: 0.1rem;
+}
+
+.rating svg {
+  color: #f8e825;
+}
+
+.rating-text {
+  font-size: 0.8rem;
+  font-weight: 600;
+  padding-left: 0.5rem;
+}
+
+.product-title {
+  height: 2.5em; /* Set a fixed height */
+  overflow: hidden; /* Hide overflow content */
+  text-overflow: ellipsis; /* Add ellipsis for long text */
+  white-space: nowrap; /* Prevent wrapping */
+}
+
+table td,
+table th {
+  text-align: center;
+}
+
+.review {
+  margin-top: 30px;
+}
+
+.review h2 {
+  font-size: 24px;
+  background: #f4f4f4;
+  padding: 10px;
+  border: 1px solid #ddd;
+}
+
+.review button {
+  margin-top: 10px;
+}
+
+.carousel-caption {
+  position: absolute;
+  width: 100%;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.5);
+}
+
+/* Modern scrollbar styling */
+.table-responsive::-webkit-scrollbar {
+  height: 4px; /* Even thinner scrollbar */
+  width: 4px;
+}
+
+.table-responsive::-webkit-scrollbar-track {
+  background: #f5f5f5; /* Lighter track */
+  border-radius: 8px;
+}
+
+.table-responsive::-webkit-scrollbar-thumb {
+  background: #d1d5db; /* Subtle gray thumb */
+  border-radius: 8px;
+  transition: background 0.2s ease; /* Smooth hover transition */
+}
+
+.table-responsive::-webkit-scrollbar-thumb:hover {
+  background: #9ca3af; /* Slightly darker on hover */
+}
+
+/* Firefox */
+.table-responsive {
+  scrollbar-width: thin;
+  scrollbar-color: #d1d5db #f5f5f5;
+}
+
+/* Modern table styling */
+.table {
+  --bs-table-striped-bg: #f8fafc; /* Lighter striped rows */
+  --bs-table-border-color: #e5e7eb; /* Subtle borders */
+  box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1); /* Soft shadow */
+  border-radius: 8px; /* Rounded corners */
+}
+
+.table thead th {
+  background-color: #f8fafc; /* Light header background */
+  border-bottom: 2px solid #e5e7eb;
+  color: #4b5563; /* Softer text color */
+  font-weight: 600;
+  padding: 12px;
+}
+
+.table tbody td {
+  color: #1f2937;
+  vertical-align: middle;
+}
+
+.table-hover tbody tr:hover {
+  background-color: #f1f5f9; /* Subtle hover effect */
+  transition: background-color 0.2s ease;
+}
+
+/* Button styling */
+.btn-light {
+  background-color: #f3f4f6;
+  border: 1px solid #e5e7eb;
+  color: #374151;
+  transition: all 0.2s ease;
+}
+
+.btn-light:hover {
+  background-color: #e5e7eb;
+  border-color: #d1d5db;
+  color: #1f2937;
+}
+
+/* First, remove/override Bootstrap's default variables */
+.table-striped > tbody > tr:nth-of-type(odd) > * {
+  --bs-table-accent-bg: none;
+}
+
+.table-hover > tbody > tr:hover > * {
+  --bs-table-accent-bg: none;
+  color: #000 !important;
+}
+
+/* Then apply our custom styles */
+.table-striped tbody tr:nth-of-type(odd) {
+  background-color: #fafafa !important;
+  --bs-table-striped-color: none;
+  color: #000 !important;
+}
+
+.table-hover tbody tr:hover {
+  background-color: #f8fafc !important;
+}
+
+.table-striped tbody tr:nth-of-type(even) {
+  background-color: #ffffff !important;
+}
+
+.table-hover > tbody > tr:hover > * {
+  /* --bs-table-accent-bg: none; */
+  /* color: inherit; */
+  background-color: #fafafa !important;
+}
+
+/* Then apply our custom styles */
+.table-striped tbody tr:nth-of-type(odd) {
+  background-color: #fafafa !important;
+}
+
+.table-hover tbody tr:hover {
+  background-color: #f8fafc !important;
+}
+
+.table-striped tbody tr:nth-of-type(even) {
+  background-color: #ffffff !important;
+}
+
+body::-webkit-scrollbar {
+  display: none;
+}

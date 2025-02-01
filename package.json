@@ -1,0 +1,40 @@
+{
+  "name": "proshop-v2",
+  "version": "1.0.0",
+  "description": "E-Commerce Application built with MERN Stack ",
+  "type": "module",
+  "main": "server.js",
+  "scripts": {
+    "start": "node backend/server.js",
+    "server": "nodemon backend/server.js",
+    "client": "cd frontend && pnpm run dev",
+    "dev": "concurrently -n \"BACKEND,FRONTEND\" -c \"green,blue\" \"pnpm run server\" \"pnpm run client\"",
+    "data:import": "node backend/seeder.js",
+    "data:destroy": "node backend/seeder.js -d",
+    "build": "cd frontend && pnpm install && pnpm build && cd .. && pnpm install"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/s54a/proshop-v2.git"
+  },
+  "author": "Sooraj Gupta",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/s54a/proshop-v2/issues"
+  },
+  "homepage": "https://github.com/s54a/proshop-v2#readme",
+  "dependencies": {
+    "bcryptjs": "^2.4.3",
+    "colors": "^1.4.0",
+    "cookie-parser": "^1.4.6",
+    "express": "^4.19.2",
+    "jsonwebtoken": "^9.0.2",
+    "mongoose": "^8.6.0",
+    "multer": "1.4.5-lts.1",
+    "dotenv": "^16.4.5"
+  },
+  "devDependencies": {
+    "concurrently": "^8.2.2",
+    "nodemon": "^3.1.4"
+  }
+}
